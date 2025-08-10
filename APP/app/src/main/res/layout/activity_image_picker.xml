@@ -1,0 +1,54 @@
+<!-- activity_image_picker.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <android.widget.Button
+        android:id="@+id/button_select_image1"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:text="植株状态"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bottom_control_button"
+        android:textSize="18sp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <android.widget.Button
+        android:id="@+id/button_select_image"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:text="病害信息"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bottom_control_button"
+        android:textSize="18sp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <android.widget.Button
+        android:id="@+id/button_select_image2"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:text="虫害信息"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bottom_control_button"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Selected Image"/>
+</LinearLayout>

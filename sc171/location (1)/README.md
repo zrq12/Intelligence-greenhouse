@@ -1,0 +1,6 @@
+gnss_location.py为GNSS定位文件
+lbs_location.py为基站定位文件
+wifi_location.py为wifi定位文件
+main.py为经纬度转地理位置信息文件
+show.py为GNSS和LBS定位信息显示在屏幕上的文件
+show_wifi.py为WIFI定位信息显示在屏幕上的文件

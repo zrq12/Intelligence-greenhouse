@@ -1,0 +1,8 @@
+import gpsd
+
+gpsd.connect()
+packet = gpsd.get_current()
+latitude = packet.position()[0]
+longitude = packet.position()[1]
+
+print(latitude+","+longitude)

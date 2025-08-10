@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:background="@drawable/top_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="6dp"
+                android:text="智能温室系统"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"/>
+        </LinearLayout>
+
+        <!-- 环境监测部分 -->
+        <TextView
+            android:id="@+id/m_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text=" 环境监测"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="4"
+            android:padding="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/m_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   温度：0 ℃"
+                    android:textColor="@color/a"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/m_humi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="   湿度：0 %"
+                    android:textColor="@color/a"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/m_co2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="   二氧化碳浓度：0 ppm"
+                    android:textColor="@color/a"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/m_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="   光照强度：0 lux"
+                    android:textColor="@color/a"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/m_soilhum"
+                    android:drawable="@drawable/rain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="   土壤湿度：0 %"
+                    android:textColor="@color/a"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/m_soiltemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="   土壤温度：0 ℃"
+                    android:textColor="@color/a"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/m_ph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="   酸碱度：0"
+                    android:textColor="@color/a"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </GridLayout>
+
+        <!-- 环境控制部分 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/m_control"
+            android:layout_margin="10dp"
+            android:text=" 环境控制"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="4"
+            android:padding="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:drawableRight="@drawable/rain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp">
+                <Switch
+                    android:id="@+id/switch_water"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  灌溉    "
+                    android:textOff="关闭"
+                    android:textOn="开启"
+                    android:showText="false"
+                    android:textSize="16sp"
+                    android:textColor="@color/switch_text_color"
+                    style="@style/AppTheme"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp">
+                <Switch
+                    android:id="@+id/switch_lignt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   灯光    "
+                    android:textOff="关闭"
+                    android:textOn="开启"
+                    android:showText="false"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track"
+                    android:textSize="16sp"
+                    android:textColor="@color/switch_text_color"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp">
+                <Switch
+                    android:id="@+id/switch_warm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   加热    "
+                    android:textOff="关闭"
+                    android:textOn="开启"
+                    android:showText="false"
+                    android:textSize="16sp"
+                    android:textColor="@color/switch_text_color"
+                    style="@style/AppTheme"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp">
+                <Switch
+                    android:id="@+id/switch_sun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   遮阳帘    "
+                    android:textOff="关闭"
+                    android:textOn="开启"
+                    android:showText="false"
+                    android:textSize="16sp"
+                    android:textColor="@color/switch_text_color"
+                    style="@style/AppTheme"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp">
+                <Switch
+                    android:id="@+id/switch_cloud"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   通风    "
+                    android:textOff="关闭"
+                    android:textOn="开启"
+                    android:showText="false"
+                    android:textSize="16sp"
+                    android:textColor="@color/switch_text_color"
+                    style="@style/AppTheme"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp">
+                <Switch
+                    android:id="@+id/switch_auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   自动控制    "
+                    android:textOff="关闭"
+                    android:textOn="开启"
+                    android:showText="false"
+                    android:textSize="16sp"
+                    android:textColor="@color/switch_text_color"
+                    style="@style/AppTheme"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp">
+                <Switch
+                    android:id="@+id/switch_plant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   预警    "
+                    android:textOff="关闭"
+                    android:textOn="开启"
+                    android:showText="false"
+                    android:textSize="16sp"
+                    android:textColor="@color/switch_text_color"
+                    style="@style/AppTheme"/>
+            </LinearLayout>
+        </GridLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <android.widget.Button
+                android:id="@+id/button_view_chart"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:text="历史数据"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:background="@drawable/bottom_control_button"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <android.widget.Button
+                android:id="@+id/button_image_picker"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:text="异常信息"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:background="@drawable/bottom_control_button"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <android.widget.Button
+                android:id="@+id/button_real_time_recognition"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:text="实时检测"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:background="@drawable/bottom_control_button"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

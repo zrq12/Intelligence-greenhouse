@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/switch_track_color"/>
+            <size android:width="160dp" android:height="20dp"/> <!-- 设置track的大小 -->
+            <corners android:radius="16dp"/>
+        </shape>
+    </item>
+</layer-list>

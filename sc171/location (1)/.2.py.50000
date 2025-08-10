@@ -1,0 +1,8 @@
+from wifi import Cell,Scheme
+
+cells = Cell.all('wlan0')
+target = max(cells,key=lambda x: x.signal)
+latitude = target.latitude
+longitude = target.longitude
+
+print(latitude+","+longitude)

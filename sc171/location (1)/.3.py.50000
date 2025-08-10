@@ -1,0 +1,7 @@
+import geocoder
+
+def get_coordinates_by_geocoder():
+    g = geocoder.ip('me')
+    return (g.lat, g.lng)
+
+print(get_coordinates_by_geocoder())

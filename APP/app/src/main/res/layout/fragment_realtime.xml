@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/m_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="温度：0 ℃"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/m_humi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="湿度：0 %"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/m_co2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="二氧化碳浓度：0 ppm"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/m_soiltemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="土壤温度：0 ℃"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/m_soilhum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="土壤湿度：0 %"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/m_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="光照强度：0 lux"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/m_ph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="酸碱度：0"
+        android:textSize="16sp" />
+</LinearLayout>
